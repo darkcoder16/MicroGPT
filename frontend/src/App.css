@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #20243a;
+  background: #f8f9fd;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --brand-purple: #8b35e8;
+  --brand-blue: #3978f6;
+  --muted: #8990a4;
+  --line: #eceef5;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { width: 100%; min-width: 320px; min-height: 100%; margin: 0; }
+body { min-height: 100vh; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #b99af8; outline-offset: 2px; }
+
+.app-shell { display: flex; width: 100%; min-height: 100vh; background: #fff; overflow: hidden; }
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 15% 15%, #f1e9ff, transparent 36%), radial-gradient(circle at 85% 85%, #e9f0ff, transparent 34%), #fafaff; }
+.auth-card { width: min(420px, 100%); display: flex; flex-direction: column; gap: 15px; padding: 34px; border: 1px solid #eceaf5; border-radius: 22px; background: #fff; box-shadow: 0 20px 60px #3a28600e; }
+.auth-brand { display: flex; align-items: center; gap: 9px; color: #8248dc; font: 800 18px 'Plus Jakarta Sans', sans-serif; }
+.auth-brand svg { font-size: 23px; }
+.auth-card h1 { margin: 12px 0 0; color: #292d40; font: 800 25px 'Plus Jakarta Sans', sans-serif; }
+.auth-card > p { margin: -8px 0 8px; color: #9298a9; font-size: 13px; }
+.auth-card label { display: flex; flex-direction: column; gap: 7px; color: #53596c; font-size: 12px; font-weight: 700; }
+.auth-card input { height: 44px; padding: 0 12px; border: 1px solid #e6e8f0; border-radius: 10px; color: #34394c; background: #fff; font-size: 13px; }
+.auth-submit { height: 45px; border: 0; border-radius: 11px; color: #fff; background: linear-gradient(105deg, #a34be9, #3979f5); font-weight: 700; }
+.auth-submit:disabled { opacity: .65; }
+.auth-switch { color: #858b9c; text-align: center; font-size: 12px; }
+.auth-switch a, .auth-back { color: #8248dc; text-decoration: none; font-weight: 700; }
+.auth-back { text-align: center; font-size: 12px; }
+.auth-error { padding: 10px; border-radius: 9px; color: #b34357; background: #fff1f3; font-size: 12px; }
